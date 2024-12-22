@@ -1,8 +1,9 @@
 {
-  "name": "clase3-api-rest-express",
+  "name": "rest-api-deploy",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "keywords": [],

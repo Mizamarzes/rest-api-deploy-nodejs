@@ -14,7 +14,8 @@ app.use(cors({
             'http://localhost:1234',
             'http://movies.com',
             'http://midu.dev',
-            'https://rest-api-deploy-nodejs.vercel.app'
+            'https://rest-api-deploy-nodejs.vercel.app',
+            'https://rest-api-deploy-nodejs-git-master-mizamarzes-projects.vercel.app'
         ]
 
         if (ACCEPTED_ORIGINS.includes(origin)) {

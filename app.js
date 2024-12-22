@@ -14,6 +14,7 @@ app.use(cors({
             'http://localhost:1234',
             'http://movies.com',
             'http://midu.dev',
+            'https://rest-api-deploy-nodejs.vercel.app'
         ]
 
         if (ACCEPTED_ORIGINS.includes(origin)) {
@@ -110,8 +111,5 @@ app.patch('/movies/:id', (req, res) => {
     return res.json(updateMovie)
 })
 
-const PORT = process.env.PORT ?? 1234
-
-app.listen(PORT, () => {
-    console.log(`server listening on port http://localhost:${PORT}`)
-})
+// Export the app for serverless deployment
+module.exports = app;
